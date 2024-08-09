@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #0d21a1;
+    --secondary-color: #c71f00;
+    --default-color: #272829;
+    --background-color: #ffffff; 
+    --default-color: #272829;
+    --heading-color:#0d21a1 ;
+    --accent-color:#c71f00 ; 
+    --surface-color: #ffffff;
+  }
+/*.typed-cursor {
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: black;
+    animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}*/
+
+.typed-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--secondary-color);
+    vertical-align: text-bottom;
+  }
+  
+  .typed-cursor--blink {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  /* .profileImage {width: 50%;} */
+  .typedText{
+    color:var(--secondary-color);
+  
+  }
+.profil-container {
+    display: inline;
+    position: relative;
+    margin-left: 0.1em;
+    padding: 13px 0;
+    /* font-family: "Roboto", sans-serif; */
+    font-size: 25px;
+    text-transform: capitalize;
+    /* line-height: 90px; */
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.profil-img-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 70%;            /* Ensure the div takes up full height if needed */
+    position: relative;
+}
+.profil-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .profil-container {
+
+        padding: 8px 0;
+        font-size: 20px;
+    }
+  }
+  .tech-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.tech-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.tech-name {
+    font-weight: bold;
+} 
+.tech-card:hover {
+    background-color: var(--accent-color); /* Change to desired hover color */
+    color: white; /* Change text color on hover */
+}
